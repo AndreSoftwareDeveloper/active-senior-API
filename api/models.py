@@ -14,9 +14,9 @@ class User(models.Model):
     district = models.CharField(max_length=100)
 
     # Interests
-    walk = models.BooleanField(default=False)
-    coffee = models.BooleanField(default=False)
-    tea = models.BooleanField(default=False)
+    walk = models.BooleanField(default=False, null=True)
+    coffee = models.BooleanField(default=False, null=True)
+    tea = models.BooleanField(default=False, null=True)
 
     def __str__(self):
         return f"{self.name}, {self.city}"
