@@ -19,4 +19,4 @@ class User(models.Model):
     tea = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.first_name}, {self.city}"
+        return f"{self.name}, {self.city}"
